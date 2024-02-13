@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<style>
+    .card{
+        padding: 20px;
+        margin: 20px;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="head">
+        <h1>Diploma Portal</h1>
+    </div>
+    
+   
+    <section>
+        
+        <div class="card" style="width: 70rem;">
+        <form class="row g-3 needs-validation" novalidate action="personal.php" method="post">
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Select Branch</label>
+                <select class="form-select" id="validationCustom04" name="branch" required>
+                  <option>CS</option>
+                  <option>EC</option>
+                  <option>AU</option>
+                  <option>ME</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+              
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Select Syllabus</label>
+                        <select class="form-select" id="validationCustom04" required name="syllabus">
+                            <option>C20</option>
+                          <option>C15</option>
+                          
+                        </select>
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Select SEM</label>
+                        <select class="form-select" id="validationCustom04" required name="semester">
+                          <option>1st Sem</option>
+                          <option>2nd Sem</option>
+                          <option>3rd Sem</option>
+                          <option>4th Sem</option>
+                          <option>5th Sem</option>
+                          <option>6th Sem</option>
+                          
+                        </select>
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>
+                      <label for="form-check">Select Resources You Want</label>
+                      <div class="form-check">
+                        
+                        <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="c1" value="textbooks">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Text Books
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="flexCheckChecked" checked name="c2" value="elearning">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Learning Videos
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        
+                        <input class="form-check-input" type="checkbox" value="modelqp" id="flexCheckDefault" name="c3">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Model Question Papers
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        
+                        <input class="form-check-input" type="checkbox" value="QP" id="flexCheckDefault" name="c4">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Previous Year Question Paper
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        
+                        <input class="form-check-input" type="checkbox" value="syllabus" id="flexCheckDefault" name="c5">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Syllabus
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        
+                        <input class="form-check-input" type="checkbox" value="notes" id="flexCheckDefault" name="c6">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Related Contents
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        
+                        <input class="form-check-input" type="checkbox" value="result" id="flexCheckDefault" name="c7">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Result Link
+                        </label>
+                      </div>
+            
+            
+            <div class="col-12">
+              <button class="btn btn-secondary" id="ok" type="submit">Submit</button>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-secondary" id="ok" type="submit"><a href="index.html">Home</a></button>
+            </div>
+          </form>
+        </div>
+    </section>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- <script>
+    document.getElementById("ok").onclick = function (){
+        location.href = 
+    }
+</script> -->
+
+</html>
